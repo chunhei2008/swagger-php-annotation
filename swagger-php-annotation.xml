@@ -1,0 +1,78 @@
+<templateSet group="swagger-php-annotation">
+  <template name="@Get" value="/**&#10; * @OA\Get(&#10; *   tags={&quot;Tag&quot;},&#10; *   path=&quot;Path&quot;,&#10; *   summary=&quot;Summary&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\Response(response=200, description=&quot;OK&quot;),&#10; *   @OA\Response(response=401, description=&quot;Unauthorized&quot;),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Post" value="/**&#10; * @OA\Post(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name store&quot;,&#10; *   @OA\RequestBody(&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *       type=&quot;object&quot;,&#10; *       required={&quot;xxx&quot;},&#10; *       @OA\Property(property=&quot;xxx&quot;, type=&quot;string&quot;)&#10; *     )&#10; *   ),&#10; *   @OA\Response(&#10; *     response=201,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10; *   ),&#10; *   @OA\Response(response=401, description=&quot;Unauthorized&quot;),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Delete" value="/**&#10; * @OA\Delete(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name destroy&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\Response(&#10; *     response=200,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/name&quot;)&#10; *   ),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Put" value="/**&#10; * @OA\Put(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name update&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\RequestBody(&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *       type=&quot;object&quot;,&#10; *       required={&quot;xxxx&quot;},&#10; *       @OA\Property(property=&quot;xxxx&quot;, type=&quot;string&quot;)&#10; *     )&#10; *   ),&#10; *   @OA\Response(&#10; *     response=200,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10; *   ),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;),&#10; *   @OA\Response(response=422, description=&quot;Unprocessable Entity&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Parameter" value="@OA\Parameter()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Schema" value="@OA\Parameter()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Response" value="@OA\Response()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@RequestBody" value="@OA\RequestBody()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@JsonContent" value="@OA\JsonContent()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Property" value="@OA\JsonContent()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Items" value="@OA\JsonContent()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Info" value="/**&#10; * @OA\Info(&#10; *     description=&quot;This is a sample Petstore server.  You can find&#10;out more about Swagger at&#10;[http://swagger.io](http://swagger.io) or on&#10;[irc.freenode.net, #swagger](http://swagger.io/irc/).&quot;,&#10; *     version=&quot;1.0.0&quot;,&#10; *     title=&quot;Swagger Petstore&quot;,&#10; *     termsOfService=&quot;http://swagger.io/terms/&quot;,&#10; *     @OA\Contact(&#10; *         email=&quot;apiteam@swagger.io&quot;&#10; *     ),&#10; *     @OA\License(&#10; *         name=&quot;Apache 2.0&quot;,&#10; *         url=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="@MediaType" value="@OA\Info()," description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Tag" value="/**&#10; * @OA\Tag(&#10; *     name=&quot;store&quot;,&#10; *     description=&quot;Access to Petstore orders&quot;,&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@SecurityScheme" value="/**&#10; * @OA\SecurityScheme(&#10; *     type=&quot;apiKey&quot;,&#10; *     in=&quot;header&quot;,&#10; *     securityScheme=&quot;api_key&quot;,&#10; *     name=&quot;api_key&quot;&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+</templateSet>
