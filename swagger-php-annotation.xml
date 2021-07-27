@@ -1,55 +1,55 @@
 <templateSet group="swagger-php-annotation">
-  <template name="@Get" value="/**&#10; * @OA\Get(&#10; *   tags={&quot;Tag&quot;},&#10; *   path=&quot;Path&quot;,&#10; *   summary=&quot;Summary&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\Response(response=200, description=&quot;OK&quot;),&#10; *   @OA\Response(response=401, description=&quot;Unauthorized&quot;),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+  <template name="@Get" value="/**&#10; * @OA\Get(&#10; *   tags={&quot;Tag&quot;},&#10; *   path=&quot;Path&quot;,&#10; *   summary=&quot;Summary&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\Response(response=200, description=&quot;OK&quot;),&#10; *   @OA\Response(response=401, description=&quot;Unauthorized&quot;),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="@Post" value="/**&#10; * @OA\Post(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name store&quot;,&#10; *   @OA\RequestBody(&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *       type=&quot;object&quot;,&#10; *       required={&quot;xxx&quot;},&#10; *       @OA\Property(property=&quot;xxx&quot;, type=&quot;string&quot;)&#10; *     )&#10; *   ),&#10; *   @OA\Response(&#10; *     response=201,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10; *   ),&#10; *   @OA\Response(response=401, description=&quot;Unauthorized&quot;),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+  <template name="@Post" value="/**&#10; * @OA\Post(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name store&quot;,&#10; *   @OA\RequestBody(&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *       type=&quot;object&quot;,&#10; *       required={&quot;xxx&quot;},&#10; *       @OA\Property(property=&quot;xxx&quot;, type=&quot;string&quot;)&#10; *     )&#10; *   ),&#10; *   @OA\Response(&#10; *     response=201,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10; *   ),&#10; *   @OA\Response(response=401, description=&quot;Unauthorized&quot;),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="@Delete" value="/**&#10; * @OA\Delete(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name destroy&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\Response(&#10; *     response=200,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/name&quot;)&#10; *   ),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+  <template name="@Delete" value="/**&#10; * @OA\Delete(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name destroy&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\Response(&#10; *     response=200,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/name&quot;)&#10; *   ),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;)&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="@Put" value="/**&#10; * @OA\Put(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name update&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\RequestBody(&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *       type=&quot;object&quot;,&#10; *       required={&quot;xxxx&quot;},&#10; *       @OA\Property(property=&quot;xxxx&quot;, type=&quot;string&quot;)&#10; *     )&#10; *   ),&#10; *   @OA\Response(&#10; *     response=200,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10; *   ),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;),&#10; *   @OA\Response(response=422, description=&quot;Unprocessable Entity&quot;)&#10; * )&#10; */" toReformat="false" toShortenFQNames="true">
+  <template name="@Put" value="/**&#10; * @OA\Put(&#10; *   tags={&quot;name&quot;},&#10; *   path=&quot;/api/path/{id}&quot;,&#10; *   summary=&quot;name update&quot;,&#10; *   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10; *   @OA\RequestBody(&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *       type=&quot;object&quot;,&#10; *       required={&quot;xxxx&quot;},&#10; *       @OA\Property(property=&quot;xxxx&quot;, type=&quot;string&quot;)&#10; *     )&#10; *   ),&#10; *   @OA\Response(&#10; *     response=200,&#10; *     description=&quot;OK&quot;,&#10; *     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10; *   ),&#10; *   @OA\Response(response=404, description=&quot;Not Found&quot;),&#10; *   @OA\Response(response=422, description=&quot;Unprocessable Entity&quot;)&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="@Parameter" value="@OA\Parameter()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Parameter" value="     @OA\Parameter(&#10;*         name=&quot;orderId&quot;,&#10;*         in=&quot;path&quot;,&#10;*         description=&quot;ID of pet that needs to be fetched&quot;,&#10;*         required=true,&#10;*         @OA\Schema(&#10;*             type=&quot;integer&quot;,&#10;*             format=&quot;int64&quot;,&#10;*             maximum=10,&#10;*             minimum=1&#10;*         )&#10;*     )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Schema" value="@OA\Parameter()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Schema" value="*         @OA\Schema(&#10;*             type=&quot;integer&quot;,&#10;*             format=&quot;int64&quot;,&#10;*             maximum=10,&#10;*             minimum=1&#10;*         )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Response" value="@OA\Response()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Response" value="@OA\Response(response=404,description=&quot;Not Found&quot;)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@RequestBody" value="/**&#10; * @OA\RequestBody(&#10; *     request=&quot;UserArray&quot;,&#10; *     description=&quot;List of user object&quot;,&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *         type=&quot;array&quot;,&#10; *         @OA\Items(ref=&quot;#/components/schemas/User&quot;)&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@RequestBody" value="@OA\RequestBody()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@JsonContent" value="*         @OA\JsonContent(&#10;*             type=&quot;array&quot;,&#10;*             @OA\Items(ref=&quot;#/components/schemas/Pet&quot;)&#10;*         )," description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@JsonContent" value="@OA\JsonContent()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Property" value="    /**&#10;     * @OA\Property(&#10;     *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10;     *     title=&quot;ID&quot;,&#10;     *     default=1,&#10;     *     description=&quot;ID&quot;,&#10;     *     nullable=true&#10;     * )&#10;     *&#10;     */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Property" value="@OA\JsonContent()," description="" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP Comment" value="true" />
-    </context>
-  </template>
-  <template name="@Items" value="@OA\JsonContent()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Items" value="@OA\Items(&#10;    type=&quot;string&quot;,&#10;    enum = {&quot;available&quot;, &quot;pending&quot;, &quot;sold&quot;},&#10;)" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
@@ -60,7 +60,7 @@
       <option name="PHP Comment" value="false" />
     </context>
   </template>
-  <template name="@MediaType" value="@OA\Info()," description="" toReformat="false" toShortenFQNames="true">
+  <template name="@MediaType" value="*         @OA\MediaType(&#10;*             mediaType=&quot;application/x-www-form-urlencoded&quot;,&#10;*             @OA\Schema(&#10;*                 type=&quot;object&quot;,&#10;*                 @OA\Property(&#10;*                     property=&quot;name&quot;,&#10;*                     description=&quot;Updated name of the pet&quot;,&#10;*                     type=&quot;string&quot;,&#10;*                 ),&#10;*                 @OA\Property(&#10;*                     property=&quot;status&quot;,&#10;*                     description=&quot;Updated status of the pet&quot;,&#10;*                     type=&quot;string&quot;&#10;*                 )&#10;*             )&#10;*         )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
@@ -73,6 +73,11 @@
   <template name="@SecurityScheme" value="/**&#10; * @OA\SecurityScheme(&#10; *     type=&quot;apiKey&quot;,&#10; *     in=&quot;header&quot;,&#10; *     securityScheme=&quot;api_key&quot;,&#10; *     name=&quot;api_key&quot;&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Response200" value="      @OA\Response(&#10; *     response=&quot;200&quot;,&#10; *     description=&quot;描述&quot;,&#10; *     @OA\JsonContent(&#10; *     @OA\Property(property=&quot;code&quot;,type=&quot;integer&quot;,format=&quot;int32&quot;),&#10; *     @OA\Property(property=&quot;message&quot;,type=&quot;string&quot;),&#10; *     @OA\Property(property=&quot;response&quot;,ref=&quot;#/components/schemas/Response&quot;)&#10; *     )&#10; *    )" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
