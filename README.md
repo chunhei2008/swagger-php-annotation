@@ -34,8 +34,29 @@ cp swagger-php-annotation.xml [phpstrom/templates/path]
 如：
 
 `@Get` 和 `@Get_` 都是HTTP `GET` 请求
+
 `@Get_` 为注释上下文使用
 `@Get` 为非注释上下文使用
+
+
+### 支持的注解列表
+
+- @Get @Get_
+- @Post @Post_
+- @Put @Put_
+- @Delete @Delete_
+- @Info @Info_
+- @Tag @Tag_
+- @Items_
+- @JsonContent_
+- @MediaType_
+- @Parameter_
+- @Property @Property_
+- @RequestBody @RequestBody_
+- @Response200_ @Response_
+- @Schema @Schema_
+- @SecurityScheme @SecurityScheme_
+
 
 ## 参考文档
 
