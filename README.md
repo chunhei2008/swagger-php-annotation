@@ -2,10 +2,8 @@
 
 ## Install
 
-
 安装插件：
 phpstrom: PHP Annotation
-
 
 具体`templates`路径参考[文档](https://www.jetbrains.com/help/phpstorm/tuning-the-ide.html#default-dirs)
 
@@ -18,17 +16,27 @@ cd swagger-php-annotation
 # 将`swagger-php-annotation.xml`复制到`templates`目录
 cp swagger-php-annotation.xml [phpstrom/templates/path]
 
+# restart your phpstrom
+
 ```
 
 ## Usage
 
+### 上下文说明
 
+`swagger-php-annotation`在`phpstrom`中分为两种上下文
 
-使用规则：
+1. 注释上下文：注释块中
+2. 非注释上下文：注释块之外的空白处
 
-- `@Get` 与 `@Get_` 为HTTP `GET` 请求
-- `@Post` 与 `@Post_` 为HTTP `POST` 请求
+同一个注解分两种上下文使用场景，不同场景使用不同的标识符
 
-带`_` 表示在注释中使用
+如：
 
-注解字段参考 [swagger-php Annotations](https://github.com/zircote/swagger-php/tree/master/src/Annotations)
+`@Get` 和 `@Get_` 都是HTTP `GET` 请求
+`@Get_` 为注释上下文使用
+`@Get` 为非注释上下文使用
+
+## 参考文档
+
+- [swagger-php Annotations](https://github.com/zircote/swagger-php/tree/master/src/Annotations)
