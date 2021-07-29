@@ -61,3 +61,4 @@ cp swagger-php-annotation.xml [phpstrom/templates/path]
 ## 参考文档
 
 - [swagger-php Annotations](https://github.com/zircote/swagger-php/tree/master/src/Annotations)
+- [OpenAPI 3.0 Specification](https://swagger.io/specification/)
