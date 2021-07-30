@@ -28,7 +28,7 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Schema" value="/**&#10;*         @OA\Schema(&#10;*             type=&quot;integer&quot;,&#10;*             format=&quot;int64&quot;,&#10;*             maximum=10,&#10;*             minimum=1&#10;*         )&#10;*/" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Schema" value="/**&#10; * @OA\Schema(&#10; *     schema=&quot;Person&quot;,&#10; *     type=&quot;object&quot;,&#10; *     @OA\Property(&#10; *         property=&quot;name&quot;,&#10; *         type=&quot;string&quot;,&#10; *         title=&quot;name&quot;,&#10; *         description=&quot;名字&quot;&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
       <option name="PHP Comment" value="false" />
@@ -50,7 +50,7 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Property" value="/**&#10; * @OA\Property(&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     title=&quot;ID&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;,&#10; *     nullable=true&#10; * )&#10; *&#10; */" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Property" value="/**&#10; * @OA\Property(&#10; *     property=&quot;demo&quot;,&#10; *     type=&quot;integer|string&quot;&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     title=&quot;ID&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;,&#10; *     nullable=true&#10; * )&#10; *&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
       <option name="PHP Comment" value="false" />
@@ -58,8 +58,7 @@
   </template>
   <template name="@Items_" value="@OA\Items(&#10;*    type=&quot;string&quot;,&#10;*    enum = {&quot;available&quot;, &quot;pending&quot;, &quot;sold&quot;},&#10;*)" description="" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
+      <option name="PHP Comment" value="true" />
     </context>
   </template>
   <template name="@Info" value="/**&#10; * @OA\Info(&#10; *     description=&quot;This is a sample Petstore server.  You can find&#10;out more about Swagger at&#10;[http://swagger.io](http://swagger.io) or on&#10;[irc.freenode.net, #swagger](http://swagger.io/irc/).&quot;,&#10; *     version=&quot;1.0.0&quot;,&#10; *     title=&quot;Swagger Petstore&quot;,&#10; *     termsOfService=&quot;http://swagger.io/terms/&quot;,&#10; *     @OA\Contact(&#10; *         email=&quot;apiteam@swagger.io&quot;&#10; *     ),&#10; *     @OA\License(&#10; *         name=&quot;Apache 2.0&quot;,&#10; *         url=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
@@ -90,7 +89,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="@Schema_" value="         @OA\Schema(&#10;*             type=&quot;integer&quot;,&#10;*             format=&quot;int64&quot;,&#10;*             maximum=10,&#10;*             minimum=1&#10;*         )" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Schema_" value=" @OA\Schema(&#10; *     schema=&quot;Person&quot;,&#10; *     type=&quot;object&quot;,&#10; *     @OA\Property(&#10; *         property=&quot;name&quot;,&#10; *         type=&quot;string&quot;,&#10; *         title=&quot;name&quot;,&#10; *         description=&quot;名字&quot;&#10; *     )&#10; * )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
@@ -100,7 +99,7 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Property_" value="@OA\Property(&#10;*     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10;*     title=&quot;ID&quot;,&#10;*     default=1,&#10;*     description=&quot;ID&quot;,&#10;*     nullable=true&#10;* )" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Property_" value=" @OA\Property(&#10; *     property=&quot;demo&quot;,&#10; *     type=&quot;integer|string&quot;&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     title=&quot;ID&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;,&#10; *     nullable=true&#10; * )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
