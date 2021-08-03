@@ -36,10 +36,10 @@
   </template>
   <template name="@Response_" value="@OA\Response(response=404,description=&quot;Not Found&quot;)" description="" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@RequestBody" value="/**&#10; * @OA\RequestBody(&#10; *     request=&quot;UserArray&quot;,&#10; *     description=&quot;List of user object&quot;,&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *         type=&quot;array&quot;,&#10; *         @OA\Items(ref=&quot;#/components/schemas/User&quot;)&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@RequestBody" value="/**&#10; * @OA\RequestBody(&#10; *     request=&quot;UserArray&quot;,&#10; *     description=&quot;List of user object&quot;,&#10; *     required=true,&#10; *     @OA\JsonContent(&#10; *         type=&quot;array&quot;,&#10; *         @OA\Items(ref=&quot;#/components/schemas/XXXSchema&quot;)&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
       <option name="PHP Comment" value="false" />
@@ -50,7 +50,7 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Property" value="/**&#10; * @OA\Property(&#10; *     property=&quot;demo&quot;,&#10; *     type=&quot;integer|string&quot;,&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     title=&quot;ID&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;,&#10; *     nullable=true&#10; * )&#10; *&#10; */" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Property" value="/**&#10; * @OA\Property(&#10; *     property=&quot;demo&quot;,&#10; *     type=&quot;integer|string&quot;,&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;&#10; * )&#10; *&#10; */" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
       <option name="PHP Comment" value="false" />
@@ -94,12 +94,12 @@
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@RequestBody_" value="@OA\RequestBody(&#10;*     request=&quot;UserArray&quot;,&#10;*     description=&quot;List of user object&quot;,&#10;*     required=true,&#10;*     @OA\JsonContent(&#10;*         type=&quot;array&quot;,&#10;*         @OA\Items(ref=&quot;#/components/schemas/User&quot;)&#10;*     )&#10;* )" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@RequestBody_" value="@OA\RequestBody(&#10;*     request=&quot;UserArray&quot;,&#10;*     description=&quot;List of user object&quot;,&#10;*     required=true,&#10;*     @OA\JsonContent(&#10;*         type=&quot;array&quot;,&#10;*         @OA\Items(ref=&quot;#/components/schemas/XXXSchema&quot;)&#10;*     )&#10;* )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
   </template>
-  <template name="@Property_" value=" @OA\Property(&#10; *     property=&quot;demo&quot;,&#10; *     type=&quot;integer|string&quot;,&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     title=&quot;ID&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;,&#10; *     nullable=true&#10; * )" description="" toReformat="false" toShortenFQNames="true">
+  <template name="@Property_" value=" @OA\Property(&#10; *     property=&quot;demo&quot;,&#10; *     type=&quot;integer|string&quot;,&#10; *     format=&quot;int32|int64|float|double|date|date-time&quot;,&#10; *     default=1,&#10; *     description=&quot;ID&quot;&#10; * )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP Comment" value="true" />
     </context>
@@ -138,6 +138,28 @@
   <template name="@Put_" value="@OA\Put(&#10;*   tags={&quot;name&quot;},&#10;*   path=&quot;/api/path/{id}&quot;,&#10;*   summary=&quot;name update&quot;,&#10;*   @OA\Parameter(ref=&quot;#/components/parameters/id&quot;),&#10;*   @OA\RequestBody(&#10;*     required=true,&#10;*     @OA\JsonContent(&#10;*       type=&quot;object&quot;,&#10;*       required={&quot;xxxx&quot;},&#10;*       @OA\Property(property=&quot;xxxx&quot;, type=&quot;string&quot;)&#10;*     )&#10;*   ),&#10;*   @OA\Response(&#10;*     response=200,&#10;*     description=&quot;OK&quot;,&#10;*     @OA\JsonContent(ref=&quot;#/components/schemas/nameResource&quot;)&#10;*   ),&#10;*   @OA\Response(response=404, description=&quot;Not Found&quot;),&#10;*   @OA\Response(response=422, description=&quot;Unprocessable Entity&quot;)&#10;* )" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="@Property_(one line)" value=" @OA\Property(property=&quot;demo&quot;,type=&quot;integer|string&quot;,format=&quot;int32|int64|float|double|date|date-time&quot;,default=1,description=&quot;ID&quot;)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Response_(ref)" value="@OA\Response(response=404,ref=&quot;#/components/responses/XXXXResponse&quot;)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+  <template name="@Schema(array)" value="/**&#10; * @OA\Schema(&#10; *     schema=&quot;Person&quot;,&#10; *     type=&quot;array&quot;,&#10; *     @OA\Items(&#10; *     )&#10; * )&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="@Response" value="/**&#10; *  @OA\Response(&#10; *     response=&quot;200&quot;,&#10; *     description=&quot;描述&quot;,&#10; *     @OA\JsonContent(&#10; *         @OA\Property(property=&quot;code&quot;,type=&quot;integer&quot;,format=&quot;int32&quot;),&#10; *         @OA\Property(property=&quot;message&quot;,type=&quot;string&quot;),&#10; *         @OA\Property(property=&quot;response&quot;,ref=&quot;#/components/schemas/Response&quot;)&#10; *     )&#10; *  )&#10; */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
     </context>
   </template>
 </templateSet>
